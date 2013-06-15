@@ -1,0 +1,8 @@
+{
+	"services": {
+		"nodejs": {
+			"addon": "nodejs",
+			"version": "0.8.14"
+		}
+	}
+}

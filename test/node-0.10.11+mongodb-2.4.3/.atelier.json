@@ -1,0 +1,12 @@
+{
+	"services": {
+		"mongodb-000": {
+			"addon": "mongodb",
+			"version": "2.4.3"
+		},
+		"nodejs-000": {
+			"addon": "nodejs",
+			"version": "0.10.11"
+		}
+	}
+}

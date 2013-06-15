@@ -1,8 +1,0 @@
-{
-	"services": {
-		"mongodb-000": {
-			"type": "mongodb",
-			"version": "2.4.3"
-		}
-	}
-}
