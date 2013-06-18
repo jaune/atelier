@@ -14,19 +14,13 @@ var atelier = new Atelier();
 
 var command = null;
 
-command = require('../lib/command/help.js')(atelier);
-atelier.on('help', command);
-atelier.on('h', command);
-
-command = require('../lib/command/install.js')(atelier);
-atelier.on('install', command);
-atelier.on('i', command);
-
-command = require('../lib/command/start.js')(atelier);
-atelier.on('start', command);
-
-command = require('../lib/command/services.js')(atelier);
-atelier.on('services', command);
+atelier.commands = {
+	help: require('../lib/command/help.js')(atelier),
+	start: require('../lib/command/start.js')(atelier),
+	stop: require('../lib/command/stop.js')(atelier),
+	services: require('../lib/command/services.js')(atelier),
+	install: require('../lib/command/install.js')(atelier)
+};
 
 atelier.addons = {
 	mongodb: require('../lib/addon/mongodb.js'),
