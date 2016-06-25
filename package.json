@@ -1,25 +1,17 @@
 {
   "name": "atelier",
-  "version": "0.0.1",
-  "description": "Developer tools.",
-  "main": "main.js",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
   "bin": {
     "atelier": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jaune/atelier.git"
-  },
-  "author": "Jaune <https://github.com/jaune>",
-  "license": "MIT",
-  "preferGlobal": true,
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "wget": "*",
-    "fstream": "*",
-    "mkdirp": "*",
-    "unzip": "*"
+    "commander": "^2.9.0"
   }
 }
